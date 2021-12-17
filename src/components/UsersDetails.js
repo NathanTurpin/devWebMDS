@@ -18,8 +18,14 @@ export default function UsersDetails() {
   }
   return (
     <div>
-      detail user : {params.userid}
-      {user.name}
+      <h5>detail user : {params.userid}</h5>
+      <p>Name : {user.name}</p>
+      <p>Email : {user.email} </p>
+      <p>Phone : {user.phone}</p>
+      <p>
+        Address :{user.address.street}, {user.address.suite},{" "}
+        {user.address.city} {user.address.zipcode}
+      </p>
     </div>
   );
 }
